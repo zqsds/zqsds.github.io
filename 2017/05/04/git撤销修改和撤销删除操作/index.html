@@ -87,12 +87,23 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZQ&#39;S blog">
-<meta property="og:url" content="https://zqsds.github.io/index.html">
+<meta name="description" content="PS：最近不太忙加上用git现在很少犯错，只会机械的操作pull、commit、push操作，导致今天在本地删错了文件却忘了怎么操作，只能百度，记性不好啦，老咯~~，下面把这写入自己的博客方便以后查找。 1 修改最后一次提交 git commit –amend1.新建一个文件 2.提交一个之前的更改  3.跟踪这个文件 4.跟前一次一起提交   提示你是否重新编辑提交说明，如果不编辑退出后还是跟之">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git撤销修改和撤销删除操作">
+<meta property="og:url" content="https://zqsds.github.io/2017/05/04/git撤销修改和撤销删除操作/index.html">
 <meta property="og:site_name" content="ZQ&#39;S blog">
+<meta property="og:description" content="PS：最近不太忙加上用git现在很少犯错，只会机械的操作pull、commit、push操作，导致今天在本地删错了文件却忘了怎么操作，只能百度，记性不好啦，老咯~~，下面把这写入自己的博客方便以后查找。 1 修改最后一次提交 git commit –amend1.新建一个文件 2.提交一个之前的更改  3.跟踪这个文件 4.跟前一次一起提交   提示你是否重新编辑提交说明，如果不编辑退出后还是跟之">
+<meta property="og:image" content="http://zq-test.qiniudn.com/17-5-4/74495215-file_1493881248148_1dc4.png">
+<meta property="og:image" content="http://zq-test.qiniudn.com/17-5-4/97358370-file_1493881288882_11d4e.png">
+<meta property="og:image" content="http://zq-test.qiniudn.com/17-5-4/97693445-file_1493881335688_174a4.png">
+<meta property="og:image" content="http://zq-test.qiniudn.com/17-5-4/97693445-file_1493881335688_174a4.png">
+<meta property="og:image" content="http://zq-test.qiniudn.com/17-5-4/80033682-file_1493881484503_e5c5.png">
+<meta property="og:image" content="http://zq-test.qiniudn.com/17-5-4/32159086-file_1493881506810_117e7.png">
+<meta property="og:updated_time" content="2017-05-04T07:08:29.759Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZQ&#39;S blog">
+<meta name="twitter:title" content="git撤销修改和撤销删除操作">
+<meta name="twitter:description" content="PS：最近不太忙加上用git现在很少犯错，只会机械的操作pull、commit、push操作，导致今天在本地删错了文件却忘了怎么操作，只能百度，记性不好啦，老咯~~，下面把这写入自己的博客方便以后查找。 1 修改最后一次提交 git commit –amend1.新建一个文件 2.提交一个之前的更改  3.跟踪这个文件 4.跟前一次一起提交   提示你是否重新编辑提交说明，如果不编辑退出后还是跟之">
+<meta name="twitter:image" content="http://zq-test.qiniudn.com/17-5-4/74495215-file_1493881248148_1dc4.png">
 
 
 
@@ -120,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="https://zqsds.github.io/"/>
+  <link rel="canonical" href="https://zqsds.github.io/2017/05/04/git撤销修改和撤销删除操作/"/>
 
 
 
 
 
-  <title> ZQ'S blog </title>
+  <title> git撤销修改和撤销删除操作 | ZQ'S blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -151,9 +162,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -246,9 +255,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -278,10 +287,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/05/04/git撤销修改和撤销删除操作/" itemprop="url">
-                  git撤销修改和撤销删除操作
-                </a>
+                git撤销修改和撤销删除操作
               
             
           </h1>
@@ -332,9 +338,7 @@
       
 
       
-        
-          
-            <p>PS：最近不太忙加上用git现在很少犯错，只会机械的操作pull、commit、push操作，导致今天在本地删错了文件却忘了怎么操作，只能百度，记性不好啦，老咯~~，下面把这写入自己的博客方便以后查找。</p>
+        <p>PS：最近不太忙加上用git现在很少犯错，只会机械的操作pull、commit、push操作，导致今天在本地删错了文件却忘了怎么操作，只能百度，记性不好啦，老咯~~，下面把这写入自己的博客方便以后查找。</p>
 <h3 id="1-修改最后一次提交-git-commit-–amend"><a href="#1-修改最后一次提交-git-commit-–amend" class="headerlink" title="1 修改最后一次提交 git commit –amend"></a>1 修改最后一次提交 git commit –amend</h3><p>1.新建一个文件 2.提交一个之前的更改</p>
 <p><img src="http://zq-test.qiniudn.com/17-5-4/74495215-file_1493881248148_1dc4.png" alt="image"></p>
 <p>3.跟踪这个文件 4.跟前一次一起提交</p>
@@ -363,20 +367,27 @@
 <p>清除所有未跟踪文件，包括纳入ignored的文件。如果要保留ignored的文件修改，使用参数-df</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">＃清除所有未跟踪文件，包括纳入ignored的文件</div><div class="line">bixiaopeng@bixiaopeng-To-be-filled-by-O-E-M:~/workspace2/spark$ git clean -dxf</div><div class="line">正删除 .idea/</div><div class="line">正删除 .package.sh.swp</div><div class="line">正删除 assets/sparklog/</div><div class="line">正删除 backup-config/AndroidManifest.xml</div><div class="line">正删除 backup-config/channel_config.xml</div><div class="line">正删除 backup-res/assets/</div><div class="line">正删除 backup-res/res/</div><div class="line">正删除 debug</div><div class="line">正删除 package/spark_2.4_L95_91zhuomian.apk</div><div class="line">正删除 res/values/channel_config.xmlg</div><div class="line">正删除 target/</div><div class="line">正删除 xiamimusic.iml</div><div class="line">＃再查看一下未跟踪的文件已经被撤消了</div><div class="line">bixiaopeng@bixiaopeng-To-be-filled-by-O-E-M:~/workspace2/spark$ git status</div><div class="line"># 位于分支 test</div><div class="line"># 尚未暂存以备提交的变更：</div><div class="line"># （使用 &quot;git add &lt;file&gt;...&quot; 更新要提交的内容）</div><div class="line"># （使用 &quot;git checkout -- &lt;file&gt;...&quot; 丢弃工作区的改动）</div><div class="line">#</div><div class="line"># 修改： pom.xml</div><div class="line">#</div><div class="line">修改尚未加入提交（使用 &quot;git add&quot; 和/或 &quot;git commit -a&quot;）｀</div></pre></td></tr></table></figure>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -384,318 +395,38 @@
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://zqsds.github.io/2017/05/04/浅谈宏定义使用技巧/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zhao Qiang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZQ'S blog">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/05/04/浅谈宏定义使用技巧/" rel="next" title="浅谈宏定义使用技巧">
+                <i class="fa fa-chevron-left"></i> 浅谈宏定义使用技巧
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2017/05/04/浅谈宏定义使用技巧/" itemprop="url">
-                  浅谈宏定义使用技巧
-                </a>
-              
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-04T13:38:34+08:00">
-                2017-05-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p> 1、宏定义介绍<br>      宏定义又称为宏替换，简称宏。它是在预处理阶段用预先定义的字符串替代标识符的过程。其定义的一般形式为：</p>
-<p> #define    标识符    字符串<br> 宏定义中的标识符都采用大写，这是编程中一种约定俗成的习惯。在了解如何使用宏定义之前，我们先来了解使用宏的过程中需要注意的几个要点。</p>
-<p> 1）宏替换不做语法检查，所以在使用的时候要格外小心。   </p>
-<p> 2）宏替换通常在文件开头部分，写在函数的花括号外边，作用域为其后的程序，直到用   ?</p>
-<p>3）# u n d e f 命令终止宏定义的作用域。</p>
-<p>4）不要在字符串中使用宏，如果宏名出现在字符串中，那么将按字符串进行处理</p>
-<p>2、宏定义会用的意义<br>    1 ）减少不必要的修改，提升程序的可预读性<br>    2 ）提升代码的可移植性 </p>
-<p>3、 如何使用宏定义实现变参     </p>
-<p>#define    print(…)   printf(<strong>VA_ARGS</strong>)<br>    在这个宏中，“. . . ”指可变参数。可变参数的实现方式就是使用“. . . ”所代表的内容替代<br><em> </em> VA <em> A R G S </em> _ ，看看下面的代码。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">#include &lt;stdio.h&gt;</div><div class="line"></div><div class="line">#ifdef TEMP</div><div class="line">#define print(...) printf(__VA_ARGS__)</div><div class="line">#else</div><div class="line">#define print(temp, ...) fprintf(stdout, temp, ##__VA_ARGS__)</div><div class="line">#endif</div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    </div><div class="line">    print(&quot;hello world-------%dn&quot;,1111);</div><div class="line">    return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>编译时带 -DTEMP或不带的情况都能正确打印出要打印的内容。但是在第二个宏定义时加##是什么意思？</p>
-<p> “#” 的作用就是对其后面的宏参数进行字符串化操作；##作用是粘合，将前后两个部分粘合成一个整体。</p>
-<hr>
-<p>下面在其他博客中中找到的相关说明，来看下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">#define A          (2) </div><div class="line">#define STR(s)     #s </div><div class="line">#define CONS(a,b)  int(a##e##b) </div><div class="line"></div><div class="line">printf(&quot;int max: %sn&quot;,  STR(INT_MAX));    // INT_MAX #i nclude </div><div class="line">这行会被展开为: </div><div class="line">printf(&quot;int max: %sn&quot;, &quot;INT_MAX&quot;); </div><div class="line"></div><div class="line">printf(&quot;%sn&quot;, CONS(A, A));               // compile error   </div><div class="line">这一行则是: </div><div class="line">printf(&quot;%sn&quot;, int(AeA));</div></pre></td></tr></table></figure>
-<p>INT_MAX和A都不会再被展开, 然而解决这个问题的方法很简单. 加多一层中间转换宏.<br>加这层宏的用意是把所有宏的参数在这层里全部展开, 那么在转换宏里的那一个宏(_STR)就能得到正确的宏参数. </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">#define A           (2) </div><div class="line">#define _STR(s)     #s </div><div class="line">#define STR(s)      _STR(s)          // 转换宏 </div><div class="line">#define _CONS(a,b)  int(a##e##b) </div><div class="line">#define CONS(a,b)   _CONS(a,b)       // 转换宏 </div><div class="line"></div><div class="line">printf(&quot;int max: %sn&quot;, STR(INT_MAX));          // INT_MAX,int型的最大值,为一个变量 #i nclude </div><div class="line">输出为: int max: 0x7fffffff </div><div class="line">STR(INT_MAX) --&gt;  _STR(0x7fffffff) 然后再转换成字符串; </div><div class="line"></div><div class="line">printf(&quot;%dn&quot;, CONS(A, A)); </div><div class="line">输出为:200 </div><div class="line">CONS(A, A)  --&gt;  _CONS((2), (2))  --&gt; int((2)e(2))</div></pre></td></tr></table></figure>
-<p>三、’#’和’##’的一些应用特例<br>1、合并匿名变量名 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">#define  ___ANONYMOUS1(type, var, line)  type  var##line </div><div class="line">#define  __ANONYMOUS0(type, line)  ___ANONYMOUS1(type, _anonymous, line) </div><div class="line">#define  ANONYMOUS(type)  __ANONYMOUS0(type, __LINE__) </div><div class="line">例:ANONYMOUS(static int);  即: static int _anonymous70;  70表示该行行号; </div><div class="line">第一层:ANONYMOUS(static int);  --&gt;  __ANONYMOUS0(static int, __LINE__); </div><div class="line">第二层:                        --&gt;  ___ANONYMOUS1(static int, _anonymous, 70); </div><div class="line">第三层:                        --&gt;  static int  _anonymous70;</div></pre></td></tr></table></figure>
-<p>即每次只能解开当前层的宏,所以<strong>LINE</strong>在第二层才能被解开;</p>
-<p>2、填充结构 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">#define  FILL(a)   &#123;a, #a&#125; </div><div class="line"></div><div class="line">enum IDD&#123;OPEN, CLOSE&#125;; </div><div class="line">typedef struct MSG&#123; </div><div class="line">  IDD id; </div><div class="line">  const char * msg; </div><div class="line">&#125;MSG; </div><div class="line"></div><div class="line">MSG _msg[] = &#123;FILL(OPEN), FILL(CLOSE)&#125;; </div><div class="line">相当于: </div><div class="line">MSG _msg[] = &#123;&#123;OPEN, &quot;OPEN&quot;&#125;, </div><div class="line">              &#123;CLOSE, &quot;CLOSE&quot;&#125;&#125;;</div></pre></td></tr></table></figure>
-<p>3、记录文件名 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#define  _GET_FILE_NAME(f)   #f </div><div class="line">#define  GET_FILE_NAME(f)    _GET_FILE_NAME(f) </div><div class="line">static char  FILE_NAME[] = GET_FILE_NAME(__FILE__);</div></pre></td></tr></table></figure>
-<p>4、得到一个数值类型所对应的字符串缓冲大小 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#define  _TYPE_BUF_SIZE(type)  sizeof #type </div><div class="line">#define  TYPE_BUF_SIZE(type)   _TYPE_BUF_SIZE(type)</div><div class="line">char  buf[TYPE_BUF_SIZE(INT_MAX)]; </div><div class="line">     --&gt;  char  buf[_TYPE_BUF_SIZE(0x7fffffff)]; </div><div class="line">     --&gt;  char  buf[sizeof &quot;0x7fffffff&quot;];</div></pre></td></tr></table></figure>
-<p>这里相当于:<br>char  buf[11];<br>使用一些宏跟踪调试 </p>
-<p>A N S I标准说明了五个预定义的宏名。它们是： </p>
-<p><em> L I N E </em> (两个下划线)，对应%d</p>
-<p><em> F I L E </em>    对应%s</p>
-<p><em> D A T E </em>   对应%s</p>
-<p><em> T I M E </em>   对应%s</p>
-<p><em> S T D C </em> </p>
-<p>如果编译不是标准的,则可能仅支持以上宏名中的几个,或根本不支持。记住编译程序 </p>
-<p>也许还提供其它预定义的宏名。 </p>
-<p><em> L I N E </em>及<em> F I L E </em>宏指令在有关# l i n e的部分中已讨论,这里讨论其余的宏名。 </p>
-<p><em> D AT E </em>宏指令含有形式为月/日/年的串,表示源文件被翻译到代码时的日期。 </p>
-<p>源代码翻译到目标代码的时间作为串包含在<em> T I M E </em>中。串形式为时：分：秒。 </p>
-<p>如果实现是标准的,则宏<em> S T D C </em>含有十进制常量1。如果它含有任何其它数,则实现是 </p>
-<p>非标准的。 </p>
-<hr>
-<p>下面是个例子，介绍上述宏定义在代码调试中的例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">#define return_exam(p) if(!(p))  </div><div class="line">&#123;printf(&quot;error: &quot;#p&quot; file_name:%stfunction_name:%stline:%d .n&quot;,  </div><div class="line">            __FILE__, __func__, __LINE__); return 0;&#125;</div><div class="line"></div><div class="line">int print()</div><div class="line">&#123;</div><div class="line">    return_exam(0);</div><div class="line">&#125;</div><div class="line">int main ()</div><div class="line">&#123;</div><div class="line">    print();</div><div class="line">    printf(&quot;hello world!!! %s(),%s,%dn&quot;,__FILE__,__func__,__LINE__);</div><div class="line">    return 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line">james@jsh:~/C_stuty/study$ ./a.out </div><div class="line">error: 0 file_name:define.c	function_name:print	line:25 .</div><div class="line">hello world!!! define.c(),main,30</div></pre></td></tr></table></figure>
-<p>四 、# p r a g m a 指令的使用<br> 预处理中的# p r a g m a   指令，其作用是设置编译器的状态或指示编译器完成一些特定的动作。使用# p r a g m a 指令的一般形式为：</p>
-<p>  #pragma  para<br>其中，p a r a 为参数。下面对一些常见的参数进行讲解。</p>
-<p>1） # p r a g m a     m e s s a g e ( “ 消息” )<br> 至于“# p r a g m a   m e s s a g e ( “ 消息” ) ”究竟有什么作用，可以通过下面的一段代码来了解其<br>具体的使用方式。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">#include&lt;stdio.h&gt;      </div><div class="line"></div><div class="line">#define STR   </div><div class="line"></div><div class="line">void main(int argc,char*argv)    </div><div class="line">&#123;    </div><div class="line">    printf(&quot; 学习#pragma命令中message参数的使用!n&quot;);</div><div class="line">#ifdef STR   </div><div class="line">#pragma message(&quot;STR 已经定义过了&quot;)   </div><div class="line">#endif </div><div class="line">&#125;</div><div class="line">james@jsh:~/C_stuty/study$ cc pragma.c </div><div class="line">pragma.c: In function ‘main’:</div><div class="line">pragma.c:9: note: #pragma message: STR 已经定义过了</div><div class="line">james@jsh:~/C_stuty/study$ ./a.out</div></pre></td></tr></table></figure>
-<p> 学习#pragma命令中message参数的使用!</p>
-<p> 我们发现，在编译的时候会打印出m e s s a g e 参数中的信息。通过这种方式，可以在代码<br>中输出想要的信息，也可以看某个宏是否已经被定义过。与之前使用p r i n t f ( ) 函数实现打印<br>的不同之处在于：m e s s a g e 打印消息出现在编译的时候，不会出现在程序最终的运行结果中；<br>而p r i n t f ( ) 函数的打印消息却会出现在最终的运行结果中。有时候，我们并不希望运行结果<br>中出现与结果无关的信息，这时可以使用# p r a g m a 命令，选择m e s s a g e 参数来实现信息的打<br>印输出。</p>
-<p>2 ）# p r a g m a   o n c e<br>    如果在头文件的开头部分加入这条指令，那么就能保证头文件只被编译一次。</p>
-<p>3 ）# p r a g m a   h d r s t o p<br> 该指令表示编译头文件到此为止，后面的无需再编译了。</p>
-<p>4 ）# p r a g m a     p a c k ( )</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">int main()</div><div class="line">&#123;</div><div class="line">#pragma pack(2)</div><div class="line"></div><div class="line">    struct stu1_&#123;</div><div class="line">        char name[20];</div><div class="line">        char num[20];</div><div class="line">        int score;</div><div class="line">        char sex;</div><div class="line">    &#125;stu1;</div><div class="line"></div><div class="line">    printf(&quot;stu1 占用的内存大小为：%dn&quot;,sizeof(stu1));</div><div class="line">#pragma pack()</div><div class="line"></div><div class="line">    struct stu2_&#123;</div><div class="line">        char name[20];</div><div class="line">        char num[20];</div><div class="line">        int score;</div><div class="line">        char sex;</div><div class="line">    &#125;stu2;</div><div class="line"></div><div class="line">    printf(&quot;stu2 占用的内存大小为：%dn&quot;,sizeof(stu2));</div><div class="line"></div><div class="line">    return 0;</div><div class="line">&#125;</div><div class="line">james@jsh:~/C_stuty/study$ ./a.out </div><div class="line">stu1 占用的内存大小为：46</div><div class="line">stu2 占用的内存大小为：48</div></pre></td></tr></table></figure>
-<p>在上面的代码中，在结构体s t 1 的前面使用了# p r a g m a   p a c k ( 2 ) ，其作用是设置2 字节对齐，接下来使用了# p r a g m a   p a c k ( ) ，其作用是取消之前设置的字节对齐方式，采用默认的4字节对齐。在输出结果中，由于s t u 1 在内存中采用2 字节对齐，而s t u 2 在内存中采用4 字节对齐，所以它们输出的结果不一致。将上面的代码修改为以下的形式。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">int main()</div><div class="line">&#123;</div><div class="line">#pragma pack(push)</div><div class="line">#pragma pack(2)</div><div class="line"></div><div class="line">    struct stu1_&#123;</div><div class="line">        char name[20];</div><div class="line">        char num[20];</div><div class="line">        int score;</div><div class="line">        char sex;</div><div class="line">    &#125;stu1;</div><div class="line"></div><div class="line">    printf(&quot;stu1 占用的内存大小为：%dn&quot;,sizeof(stu1));</div><div class="line">#pragma pack(pop)</div><div class="line"></div><div class="line">    struct stu2_&#123;</div><div class="line">        char name[20];</div><div class="line">        char num[20];</div><div class="line">        int score;</div><div class="line">        char sex;</div><div class="line">    &#125;stu2;</div><div class="line"></div><div class="line">    printf(&quot;stu2 占用的内存大小为：%dn&quot;,sizeof(stu2));</div><div class="line"></div><div class="line">    return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p> 运行结果与前面代码的运行结果完全一致。看看修改的地方，在设置2 字节对齐方式之前添加了一句代码“# p r a g m a   p a c k ( p u s h ) ”，其作用是保存当前默认的字节对齐方式，而把下面原本的“# p r a g m a   p a c k ( ) ”修改为“# p r a g m a   p a c k ( p o p ) ”，其作用是恢复默认的字节对齐方式，可以看出这里代码的功能与之前代码的功能完全一致。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://zqsds.github.io/2017/05/03/个人博客网站第一天/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zhao Qiang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZQ'S blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/05/03/个人博客网站第一天/" itemprop="url">
-                  个人博客网站第一天
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-03T09:32:21+08:00">
-                2017-05-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>CSDN上的博客莫名其妙不能写了，让我很忧伤啊，第一天很开心！！</p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -703,6 +434,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -722,8 +457,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -776,6 +520,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-修改最后一次提交-git-commit-–amend"><span class="nav-number">1.</span> <span class="nav-text">1 修改最后一次提交 git commit –amend</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-撤消已暂存的文件-git-reset-HEAD"><span class="nav-number">2.</span> <span class="nav-text">2 撤消已暂存的文件 git reset HEAD</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-撤消对文件的修改-git-checkout-–"><span class="nav-number">3.</span> <span class="nav-text">3 撤消对文件的修改 git checkout – </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Git撤消commit"><span class="nav-number">4.</span> <span class="nav-text">4 Git撤消commit</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Git版本回退"><span class="nav-number">5.</span> <span class="nav-text">5 Git版本回退</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-撤消未跟踪文件-git-clean-dxf"><span class="nav-number">6.</span> <span class="nav-text">6 撤消未跟踪文件 git clean -dxf</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -883,6 +643,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
